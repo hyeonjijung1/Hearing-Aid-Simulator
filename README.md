@@ -1,4 +1,4 @@
-# Hearing Loss & Hearing Aid Simulator – DE1-SoC Project
+# 🎧 Hearing Loss & Hearing Aid Simulator – DE1-SoC Project
 
 ##  Project Purpose
 
