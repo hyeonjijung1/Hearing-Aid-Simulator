@@ -53,5 +53,14 @@ Anyone can try our simulator online using the DE1-SoC emulator:
 
 ## 📊 Block Diagram
 
-> 🖼️ Insert your system block diagram image here (e.g., `block_diagram.png`)  
+> 🖼️ Insert your system block diagram image here (e.g., `block_diagram.png`)
+
+---
+
+## 👥 Team Members
+
+- Hyeonji Jung
+- Shayana Ramachandran
+
+University of Toronto – ECE243 Project
 
