@@ -10,7 +10,7 @@ This project is made with kindness and a hope to build more awareness, empathy, 
 
 ---
 ##  What This Project Does
-### 📷 Block Diagram
+###  Block Diagram
 
 The following diagram shows how different components of the DE1-SoC interact to simulate both hearing loss and hearing aid functionality:
 
