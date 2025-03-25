@@ -10,6 +10,11 @@ This project is made with kindness and a hope to build more awareness, empathy, 
 
 ---
 ##  What This Project Does
+### 📷 Block Diagram
+
+The following diagram shows how different components of the DE1-SoC interact to simulate both hearing loss and hearing aid functionality:
+
+![Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Screenshot%202025-03-25%20020700.png?raw=true)
 
 - **VGA Display Interface**  
   Shows different screens (homepage, hearing loss mode, hearing aid mode, etc.) using pixel plotting.
@@ -51,9 +56,6 @@ Anyone can try our simulator online using the DE1-SoC emulator:
 ---
 
 
-## 📊 Block Diagram
-
-> 🖼️ Insert your system block diagram image here (e.g., `block_diagram.png`)
 
 ---
 
