@@ -1,6 +1,6 @@
 # Hearing Loss & Hearing Aid Simulator – DE1-SoC Project
 
-## 🧠 Project Purpose
+##  Project Purpose
 
 We created this project because we care about people who live with hearing difficulties. Our goal is to help others understand what it feels like to experience hearing loss and how hearing aids can make a difference.
 
@@ -9,7 +9,7 @@ By using the DE1-SoC board, we built a simulator that shows how hearing can chan
 This project is made with kindness and a hope to build more awareness, empathy, and appreciation for assistive technologies that help people hear better.
 
 ---
-## 🔧 What This Project Does
+##  What This Project Does
 
 - **VGA Display Interface**  
   Shows different screens (homepage, hearing loss mode, hearing aid mode, etc.) using pixel plotting.
@@ -27,7 +27,7 @@ This project is made with kindness and a hope to build more awareness, empathy, 
   Lights up to show the level of gain and blinks when the highest level is reached.
 
 ---
-## 🧪 Try It Yourself (Anyone Can!)
+##  Try It Yourself (Anyone Can!)
 
 Anyone can try our simulator online using the DE1-SoC emulator:
 
