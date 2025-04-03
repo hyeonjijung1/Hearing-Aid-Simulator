@@ -1,68 +1,136 @@
 # 🎧 Hearing Loss & Hearing Aid Simulator – DE1-SoC Project
 
-##  Project Purpose
+## 🎯 Purpose
 
-We created this project because we care about people who live with hearing difficulties. Our goal is to help others understand what it feels like to experience hearing loss and how hearing aids can make a difference.
+This project simulates the experience of **hearing loss** and the effect of **hearing aids** using real-time audio processing, VGA visuals, and PS/2 keyboard inputs on the **DE1-SoC board**.
 
-By using the DE1-SoC board, we built a simulator that shows how hearing can change when volume is reduced or when background noise becomes hard to ignore. We also show how hearing aids can help by making sounds louder and clearer.
-
-This project is made with kindness and a hope to build more awareness, empathy, and appreciation for assistive technologies that help people hear better.
+We created this to help raise awareness, foster empathy, and demonstrate the value of assistive technologies in hearing health. Through volume reduction, background noise distortion, and echo processing, users can "hear" what it might feel like to struggle with audio perception—and see how hearing aids might help.
 
 ---
-##  What This Project Does
-###  Block Diagram
 
-The following diagram shows how different components of the DE1-SoC interact to simulate both hearing loss and hearing aid functionality:
+## 🧠 What This Project Does
+
+### 🔁 System Overview
+
+- **Input**: Microphone or preloaded audio samples
+- **Processing**:
+  - Hearing Loss: Volume reduction, noise distortion, speech degradation
+  - Hearing Aid: Volume gain, noise suppression, optional echo
+  - Toggle echo, distortion, and low-pass filters
+- **Output**: Processed stereo audio + VGA screen visuals
+- **User Control**: PS/2 keyboard & DE1 keys for switching modes and levels
+
+---
+
+## 🖼 Block Diagram
 
 ![Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Screenshot%202025-03-25%20020700.png?raw=true)
 
-- **VGA Display Interface**  
-  Shows different screens (homepage, hearing loss mode, hearing aid mode, etc.) using pixel plotting.
-
-- **PS/2 Keyboard Input**  
-  Lets users switch between modes (`v`, `n`, `r`, `d`), replay audio, and adjust gain using keyboard keys.
-
-- **Audio Output Simulation**  
-  Plays audio with effects that include:
-  - **Volume reduction** (to show hearing loss)
-  - **Noise distortion** (to simulate noisy environments)
-  - **Volume and noise gain** (to simulate hearing aid help)
-
-- **LED Feedback System**  
-  Lights up to show the level of gain and blinks when the highest level is reached.
-
 ---
-##  Try It Yourself (Anyone Can!)
 
-Anyone can try our simulator online using the DE1-SoC emulator:
+## 🖥 Screens & Modes
 
-🔗 **Go to:** [https://cpulator.01xz.net/?sys=rv32-de1soc](https://cpulator.01xz.net/?sys=rv32-de1soc)
-
-### Instructions:
-1. Change the language to **C** using the dropdown.
-2. Upload our `.c` file to the editor.
-3. Click **PS/2 Keyboard 1** on the side panel to open the virtual keyboard.
-4. Use the following keys:
-   - `A` → Go to **Hearing Aid** simulator
-   - `L` → Go to **Hearing Loss** simulator
-   - `V` → Switch to **volume gain** control
-   - `N` → Switch to **noise gain** control
-   - `R` → Enter **volume reduction** mode (Loss)
-   - `D` → Enter **distortion** mode (Loss)
-   - `KEY0` (on emulator) → Increase gain level
-   - `KEY1` → Reset gain levels
-   - `KEY3` → Replay the audio
+| Screen / Mode       | Description |
+|---------------------|-------------|
+| `Homepage`          | Intro screen; choose between samples or mic mode |
+| `Mode Select`       | Pick sample 1 (conversation), 2 (busy street), 3 (orchestra), or mic input |
+| `Simulator`         | Basic playback screen before choosing Aid/Loss |
+| `Hearing Loss`      | Simulates muffled, distorted, or noisy hearing |
+| `Hearing Aid`       | Adds gain, echo, and filters to enhance clarity |
+| `Mic Mode`          | Real-time mic input with processing & echo options |
 
 ---
 
+## 🎮 Controls (PS/2 Keyboard + Keys)
 
+### 🔤 Keyboard Inputs
+
+| Key         | Action |
+|-------------|--------|
+| `1`         | Select Sample 1 (Conversation) |
+| `2`         | Select Sample 2 (Busy Street) |
+| `3`         | Select Sample 3 (Orchestra) |
+| `4`         | Switch to Microphone Input Mode |
+| `←`         | Switch to Hearing Loss Simulator |
+| `A`         | Switch to Hearing Aid Simulator |
+| `V`         | Adjust Volume level |
+| `N`         | Adjust Noise level |
+| `S`         | Adjust Speech distortion level |
+| `E`         | Toggle Echo (On/Off) |
+| `H`         | Return to Homepage |
+| `↑` / `↓`   | Increase / Decrease effect level |
 
 ---
 
-## 👥 Team Members
+## 🔊 Audio Features
 
-- Hyeonji Jung
-- Shayana Ramachandran
+### Hearing Loss Simulator:
+- Volume reduction with multiple levels
+- White noise overlay with adjustable intensity
+- Speech distortion effects
+- Optional low-pass filters
+- Visual feedback via LED and screen
 
-University of Toronto – ECE243 Project
+### Hearing Aid Simulator:
+- Volume amplification (scaling)
+- Noise subtraction
+- Adjustable echo (damping constants)
+- Real-time filtering (optional)
+- Real-time distortion (clipping with gain)
+- Bubble-like VGA visuals for gain levels
+
+---
+
+## 🎆 Visual Interface
+
+- **VGA Display** shows UI transitions: Homepage, Mode Selector, Loss Simulator, Aid Simulator
+- **LEDs** indicate current gain/noise mode and blink on max level
+- **Pixel Drawing** for animated numeric visual gain levels
+
+---
+
+## 🧪 Try It Yourself (Emulator)
+
+Try the project in-browser with this link:
+
+🔗 [https://cpulator.01xz.net/?sys=rv32-de1soc](https://cpulator.01xz.net/?sys=rv32-de1soc)
+
+### 🛠 Steps:
+1. Change **language** to `C`
+2. Upload `hearing_simulator.c` file
+3. Open **PS/2 Keyboard 1** on the left panel
+4. Interact using the controls above!
+
+---
+
+## 📁 File Structure
+
+| File                  | Description |
+|-----------------------|-------------|
+| `hearing_simulator.c` | Main C file with audio & UI logic |
+| `README.md`           | This file |
+| `sample1[]`           | Conversation sample array (TODO: populate) |
+| `sample2[]`           | Busy street sample array |
+| `sample3[]`           | Orchestra sample array |
+| `main_menu[]` etc.    | VGA image arrays for different screens |
+
+---
+
+## 👥 Team
+
+- **Hyeonji Jung**
+- **Shayana Ramachandran**
+
+👨‍🎓 University of Toronto  
+📚 ECE243 – Introduction to Computer Organization
+
+---
+
+## 💡 Future Improvements
+
+- Add real waveform visualization on VGA
+- Support recording and storing new user samples
+- Add FFT-based frequency analysis
+- Multi-language menu and audio prompts
+
 
