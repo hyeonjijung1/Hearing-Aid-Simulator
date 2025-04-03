@@ -1,6 +1,6 @@
 # 🎧 Hearing Loss & Hearing Aid Simulator – DE1-SoC Project
 
-## 🎯 Purpose
+##  Purpose
 
 This project simulates the experience of **hearing loss** and the effect of **hearing aids** using real-time audio processing, VGA visuals, and PS/2 keyboard inputs on the **DE1-SoC board**.
 
@@ -8,9 +8,9 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🧠 What This Project Does
+##  What This Project Does
 
-### 🔁 System Overview
+###  System Overview
 
 - **Input**: Microphone or preloaded audio samples
 - **Processing**:
@@ -22,13 +22,13 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🖼 Block Diagram
+## Block Diagram
 
 ![Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Screenshot%202025-03-25%20020700.png?raw=true)
 
 ---
 
-## 🖥 Screens & Modes
+##  Screens & Modes
 
 | Screen / Mode       | Description |
 |---------------------|-------------|
@@ -41,9 +41,9 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🎮 Controls (PS/2 Keyboard + Keys)
+##  Controls (PS/2 Keyboard + Keys)
 
-### 🔤 Keyboard Inputs
+###  Keyboard Inputs
 
 | Key         | Action |
 |-------------|--------|
@@ -62,7 +62,7 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🔊 Audio Features
+##  Audio Features
 
 ### Hearing Loss Simulator:
 - Volume reduction with multiple levels
@@ -81,7 +81,7 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🎆 Visual Interface
+##  Visual Interface
 
 - **VGA Display** shows UI transitions: Homepage, Mode Selector, Loss Simulator, Aid Simulator
 - **LEDs** indicate current gain/noise mode and blink on max level
@@ -89,13 +89,13 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## 🧪 Try It Yourself (Emulator)
+## Try It Yourself (Emulator)
 
 Try the project in-browser with this link:
 
 🔗 [https://cpulator.01xz.net/?sys=rv32-de1soc](https://cpulator.01xz.net/?sys=rv32-de1soc)
 
-### 🛠 Steps:
+###  Steps:
 1. Change **language** to `C`
 2. Upload `hearing_simulator.c` file
 3. Open **PS/2 Keyboard 1** on the left panel
@@ -103,7 +103,7 @@ Try the project in-browser with this link:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 | File                  | Description |
 |-----------------------|-------------|
@@ -116,21 +116,15 @@ Try the project in-browser with this link:
 
 ---
 
-## 👥 Team
+##  Team
 
 - **Hyeonji Jung**
 - **Shayana Ramachandran**
 
-👨‍🎓 University of Toronto  
-📚 ECE243 – Introduction to Computer Organization
+ University of Toronto  
+ ECE243 – Introduction to Computer Organization
 
 ---
 
-## 💡 Future Improvements
-
-- Add real waveform visualization on VGA
-- Support recording and storing new user samples
-- Add FFT-based frequency analysis
-- Multi-language menu and audio prompts
 
 
