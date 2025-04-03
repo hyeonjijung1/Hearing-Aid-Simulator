@@ -2,6 +2,7 @@
 
 ##  Purpose
 
+![Start Screen](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Untitled_Artwork%206.jpg)
 This project simulates the experience of **hearing loss** and the effect of **hearing aids** using real-time audio processing, VGA visuals, and PS/2 keyboard inputs on the **DE1-SoC board**.
 
 We created this to help raise awareness, foster empathy, and demonstrate the value of assistive technologies in hearing health. Through volume reduction, background noise distortion, and echo processing, users can "hear" what it might feel like to struggle with audio perception—and see how hearing aids might help.
