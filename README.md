@@ -22,10 +22,25 @@ We created this to help raise awareness, foster empathy, and demonstrate the val
 
 ---
 
-## Block Diagram
+## Block Diagrams
 
-![Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Screenshot%202025-03-25%20020700.png?raw=true)
+Below are the system block diagrams showing how the DE1-SoC interacts with various components in the hearing simulator.
 
+### Original Block Diagram
+![Old Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/Screenshot%202025-03-25%20020700.png?raw=true)
+
+This version illustrates the basic idea of mode switching and audio output effects using stored samples or microphone input.
+
+---
+
+### Updated Block Diagram
+![New Block Diagram](https://github.com/hyeonjijung1/Hearing-Aid-Simulator/blob/main/block_diagram.png)
+
+The updated diagram adds clarity on:
+
+- Audio pipeline stages (echo, distortion, filtering)
+- Key user interactions (VGA, PS/2, LED)
+- Dynamic control flow between hearing aid and loss modes
 ---
 
 ##  Screens & Modes
