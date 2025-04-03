@@ -114,7 +114,7 @@ Try the project in-browser with this link:
 
 ###  Steps:
 1. Change **language** to `C`
-2. Upload `REAL FINAL CODE (2).c` file
+2. Upload `REAL FINAL CODE.c` file
 3. Open **PS/2 Keyboard 1** on the left panel
 4. Interact using the controls above!
 
